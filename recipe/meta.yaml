@@ -1,18 +1,18 @@
 {% set name = "RedLionfish" %}
-{% set version = "0.6" %}
+{% set version = "0.7" %}
 
 package:
-  name: "{{ name|lower }}"
-  version: "{{ version }}"
+  name: {{ name|lower }}
+  version: {{ version }}
 
 source:
   url: https://github.com/rosalindfranklininstitute/RedLionfish/archive/refs/tags/v{{ version }}.tar.gz
-  sha256: 47cfa25aa2602041cf66279249fbebfc995528ece465ad86f9c7f2b5f45a69a3 #v0.6
+  sha256: 1a6991a32d62ca5f27481ecd7332e0a8a080a21dd7f82ccdd34949cf33332292 #v0.6
 
 build:
   number: 0
 
-  script: "{{ PYTHON }} ./setup_for_condabuild.py -vv install"
+  script: {{ PYTHON }} ./setup_for_condabuild.py -vv install
 
 requirements:
   host:
