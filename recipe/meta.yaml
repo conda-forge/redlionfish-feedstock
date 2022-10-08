@@ -29,6 +29,7 @@ requirements:
     - pyopencl
     - reikna
     - ocl-icd-system  # [linux]
+    - ocl_icd_wrapper_apple  # [osx]
 
 test:
   imports:
