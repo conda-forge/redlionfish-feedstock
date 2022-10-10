@@ -10,7 +10,7 @@ source:
   sha256: 41149443dc338b9a8f91acde848ef37e2a590e0c9b022e447cd4326eacbc0ef6 #v0.8
 
 build:
-  number: 0
+  number: 1
 
   script: "{{ PYTHON }} ./setup_for_condabuild.py -vv install"
 
@@ -29,6 +29,7 @@ requirements:
     - pyopencl
     - reikna
     - ocl-icd-system  # [linux]
+    - ocl_icd_wrapper_apple  # [osx]
 
 test:
   imports:
