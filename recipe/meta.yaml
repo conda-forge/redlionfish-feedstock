@@ -1,5 +1,5 @@
 {% set name = "RedLionfish" %}
-{% set version = "0.8" %}
+{% set version = "0.9" %}
 
 package:
   name: "{{ name|lower }}"
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/rosalindfranklininstitute/RedLionfish/archive/refs/tags/v{{ version }}.tar.gz
-  sha256: 41149443dc338b9a8f91acde848ef37e2a590e0c9b022e447cd4326eacbc0ef6 #v0.8
+  sha256: b9e46d45664b83e87671b292be12bfaff5051ae29c0f8aea12484f139d4cd061 #v0.9
 
 build:
   number: 2
