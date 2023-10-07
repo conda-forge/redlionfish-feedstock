@@ -10,7 +10,7 @@ source:
   sha256: b9e46d45664b83e87671b292be12bfaff5051ae29c0f8aea12484f139d4cd061 #v0.9
 
 build:
-  number: 2
+  number: 3
 
   script: "{{ PYTHON }} ./setup_for_condabuild.py -vv install"
 
